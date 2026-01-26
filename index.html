@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know What You Do</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading">Know What You Do</h1>
+    <br>
+    <div class="main">
+        <img src="brain.jpg" alt="Brain Image" class="brain-image" height="300px" width="420px" align="right">
+        <p class="content">The brain works as the body’s control center, using billions of neurons to send electrical and chemical signals that help us think, move, feel, and remember. Attention span is controlled mainly by the prefrontal cortex, which helps us focus, plan, and avoid distractions. In today’s world, frequent screen use, multitasking, lack of sleep, and stress can reduce attention span by overloading the brain. However, attention can be improved with healthy habits. Getting enough sleep helps the brain process information efficiently, while regular exercise increases blood flow and brain activity. Practicing mindfulness, reading, and concentrating on one task at a time can strengthen focus. Eating a balanced diet and taking short breaks during study sessions also prevent mental fatigue. By training the brain with consistent routines and fewer distractions, attention span can gradually improve and support better learning and performance.</p>
+    </div>
+
+    <div class="break">
+        <h1>If you came here, you are a top 1% explorer!</h1>
+        <hr>
+        <div class="scroll">
+             <h2>You scrolled at an average speed of: </h2>
+                <h1 class="scroll-speed"></h1>
+        </div>
+        <hr>
+        <div class="fake-captcha-container">
+            <label class="fake-captcha">
+                <div class="checkbox-wrapper">
+                <input type="checkbox" class="input">
+                <span class="checkmark"></span>
+        </div>
+                <span class="label-text">I'm not a robot</span>
+            </label>
+        <div class="captcha-branding">
+            <img src="https://www.gstatic.com" alt="reCAPTCHA">
+            <span>reCAPTCHA</span>
+            <small>Privacy - Terms</small>
+        </div>
+        </div>
+        <div id="reaction-time-container" style="display: none;">
+            <h2>Your reaction time: </h2>
+            <h1 class="reaction-time"></h1>
+        </div>
+        <div id="reading-time-container" style="display: none;">
+            <h2>Time spent reading: </h2>
+            <h1 class="reading-time"></h1>
+        </div>
+        <div id="profile-container" style="display: none;">
+            <h2>Your Cognitive Profile</h2>
+            <div class="profile-badges">
+                <div id="attention-badge" class="badge"></div>
+                <div id="speed-badge" class="badge"></div>
+                <div id="response-badge" class="badge"></div>
+            </div>
+            <hr>
+            <h2>Your Stats vs Average Population</h2>
+            <div class="comparison-chart">
+                <div class="metric">
+                    <h3>Reading Speed</h3>
+                    <div class="chart-bar">
+                        <div class="user-bar" id="reading-speed-bar"></div>
+                    </div>
+                    <p><span class="user-label">You:</span> <span id="user-wpm">0</span> WPM | <span class="avg-label">Average:</span> 144 WPM</p>
+                </div>
+                <div class="metric">
+                    <h3>Reaction Time</h3>
+                    <div class="chart-bar">
+                        <div class="user-bar" id="reaction-bar"></div>
+                    </div>
+                    <p><span class="user-label">You:</span> <span id="user-reaction">0</span>s | <span class="avg-label">Average:</span> 1.5-2s</p>
+                </div>
+                <div class="metric">
+                    <h3>Scroll Speed</h3>
+                    <div class="chart-bar">
+                        <div class="user-bar" id="scroll-bar"></div>
+                    </div>
+                    <p><span class="user-label">You:</span> <span id="user-scroll">0</span> px/s | <span class="avg-label">Average:</span> 1200-1500 px/s</p>
+                </div>
+            </div>
+        </div>
+        <div id="average-attention" style="display: none;">
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

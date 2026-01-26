@@ -1,0 +1,269 @@
+body{
+    font-family: 'Google Sans Flex', sans-serif;
+    background-color: #04070b;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px;
+}
+.heading{
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.content{
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 40px;
+    text-align: justify;
+}
+.brain-image{
+    border-radius: 30px;
+    margin-left: 20px;
+    max-width: 620px;
+    max-height: 520px;
+    margin-left: 10px;
+    max-height:fit-content;
+    max-width:fit-content;
+}
+.break{
+    margin-top: 2000px;
+}
+.scroll{
+    margin-top: 650px;
+    margin-bottom: 1200px;
+}
+.fake-captcha-container {
+  width: 300px;
+  height: 74px;
+  background: #0e0f2e;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  font-family: Roboto, helvetica, arial, sans-serif;
+  user-select: none;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.fake-captcha {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox-wrapper {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  margin-right: 12px;
+}
+
+.checkbox-wrapper input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 28px;
+  width: 28px;
+  background-color: #fff;
+  border: 2px solid #c1c1c1;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+/* Hover effect */
+.fake-captcha:hover .checkmark {
+  border-color: #b2b2b2;
+}
+
+/* Checked state: the green check */
+.checkbox-wrapper input:checked ~ .checkmark {
+  border: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org" viewBox="0 0 24 24" fill="%23009688"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>') no-repeat center;
+  background-size: 24px;
+}
+
+.label-text {
+  font-size: 14px;
+  color: #efefef;
+}
+
+.captcha-branding {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.captcha-branding img {
+  width: 32px;
+}
+
+.captcha-branding span {
+  font-size: 10px;
+  color: #555;
+}
+
+.captcha-branding small {
+  font-size: 8px;
+  color: #999;
+}
+.input{
+    cursor: pointer;
+
+}
+/* Checked state: Remove border and prep for checkmark */
+.checkbox-wrapper input:checked ~ .checkmark {
+  border: none;
+  background-color: transparent; /* Clear background to see custom check */
+}
+
+/* Create the checkmark using pseudo-element borders */
+.checkbox-wrapper input:checked ~ .checkmark:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 4px;
+  width: 7px;
+  height: 14px;
+  border: solid #009688; /* The signature reCAPTCHA green */
+  border-width: 0 3px 3px 0; /* Creates an 'L' shape */
+  transform: rotate(45deg); /* Rotates 'L' into a checkmark */
+  display: block;
+}
+@keyframes checkAppear {
+  0% { opacity: 0; transform: rotate(45deg) scale(0); }
+  100% { opacity: 1; transform: rotate(45deg) scale(1); }
+}
+
+.checkbox-wrapper input:checked ~ .checkmark:after {
+  animation: checkAppear 0.2s ease-in-out;
+}
+/* If the container has a checked input, hide the container */
+.fake-captcha-container:has(input:checked) {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out; /* Smoothly collapse the space */
+}
+#reading-time-container {
+    margin-top: 1200px;
+}
+
+#profile-container {
+    margin-top: 100px;
+    padding: 40px;
+    background: rgba(14, 15, 46, 0.5);
+    border-radius: 15px;
+    margin-bottom: 100px;
+}
+
+#profile-container h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #00d4ff;
+}
+
+.profile-badges {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.badge {
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    min-width: 150px;
+}
+
+.comparison-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.metric {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.metric h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #00d4ff;
+}
+
+.chart-bar {
+    width: 100%;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.user-bar {
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+.metric:nth-child(1) .user-bar {
+    background: linear-gradient(90deg, #ff6b6b, #ee5a52);
+}
+
+.metric:nth-child(2) .user-bar {
+    background: linear-gradient(90deg, #4ecdc4, #44b7a8);
+}
+
+.metric:nth-child(3) .user-bar {
+    background: linear-gradient(90deg, #ffd93d, #ffc300);
+}
+
+.metric p {
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+.user-label {
+    color: #00d4ff;
+    font-weight: 600;
+}
+
+.avg-label {
+    color: #888;
+}
+
+#average-attention {
+    margin-top: 60px;
+    padding: 30px;
+    background: rgba(14, 15, 46, 0.7);
+    border-radius: 15px;
+    border-top: 3px solid #00d4ff;
+}
+
+#average-attention h2 {
+    font-size: 24px;
+    margin: 0;
+}
