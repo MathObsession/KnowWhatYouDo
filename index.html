@@ -2,88 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Know What You Do</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="heading">Know What You Do</h1>
-    <br>
-    <div class="main">
-        <img src="brain.jpg" alt="Brain Image" class="brain-image" height="300px" width="420px" align="right">
-        <p class="content">The brain works as the control center of the human body, coordinating thoughts, movements, emotions, and bodily functions through a complex network of billions of neurons. These neurons communicate with each other using electrical impulses and chemical messengers called neurotransmitters, allowing the brain to process information quickly and efficiently. Different parts of the brain have specialized roles. The cerebrum is responsible for thinking, learning, memory, and decision-making, while the cerebellum helps with balance and coordination. The brainstem controls vital functions such as breathing, heartbeat, and sleep. One important function of the brain is attention, which is mainly managed by the prefrontal cortex. Attention span refers to the ability to focus on a task for a certain period without getting distracted. A strong attention span helps in learning, problem-solving, and completing tasks effectively.
-In modern life, attention span is often reduced due to constant exposure to digital devices, social media, and multitasking. The brain is not designed to focus on many things at once, so switching between tasks can overload it and reduce efficiency. Lack of sleep also negatively affects attention because the brain needs rest to repair itself and organize information. Stress and anxiety further weaken focus by keeping the brain in a constant state of alertness. Poor diet and physical inactivity can also reduce brain performance by limiting the supply of nutrients and oxygen needed for healthy brain function.
-However, attention span can be improved with consistent effort and healthy habits. Getting enough sleep each night allows the brain to recharge and improves concentration. Regular physical exercise increases blood flow to the brain, enhancing alertness and memory. Practicing mindfulness, meditation, and deep breathing can train the brain to stay focused and calm. Reducing screen time, especially before studying, helps limit distractions. Studying in short, focused sessions with breaks in between prevents mental fatigue. Eating a balanced diet rich in fruits, vegetables, and proteins supports brain health. By developing these habits, the brain can strengthen its ability to focus, leading to better learning, productivity, and overall mental well-being.</p>
+
+<h1 class="heading">
+    <span class="section1">Know</span>
+    <span class="section2">What</span>
+    <span class="section3">You</span>
+    <span class="section4">Do</span>
+</h1>
+
+<div class="main">
+    <p class="content"></p>
+    <div id="scroll-warning" style="display:none; color:#e3e3e3; font-weight:600; margin-top:20px;">
+        ↓ Scroll down
+    </div>
+</div>
+
+<div class="break">
+    <h1>If you came here, you are a top 1% explorer!</h1>
+    <hr>
+
+    <div class="scroll">
+        <h2>You scrolled at an average speed of:</h2>
+        <h1 class="scroll-speed"></h1>
     </div>
 
-    <div class="break">
-        <h1>If you came here, you are a top 1% explorer!</h1>
-        <hr>
-        <div class="scroll">
-             <h2>You scrolled at an average speed of: </h2>
-                <h1 class="scroll-speed"></h1>
-        </div>
-        <hr>
-        <div class="fake-captcha-container">
-            <label class="fake-captcha">
-                <div class="checkbox-wrapper">
+    <hr>
+
+    <div class="fake-captcha-container">
+        <label class="fake-captcha">
+            <div class="checkbox-wrapper">
                 <input type="checkbox" class="input">
                 <span class="checkmark"></span>
-        </div>
-                <span class="label-text">I'm not a robot</span>
-            </label>
-        <div class="captcha-branding">
-            <img src="https://www.gstatic.com" alt="reCAPTCHA">
-            <span>reCAPTCHA</span>
-            <small>Privacy - Terms</small>
-        </div>
-        </div>
-        <div id="reaction-time-container" style="display: none;">
-            <h2>Your reaction time: </h2>
-            <h1 class="reaction-time"></h1>
-        </div>
-        <div id="reading-time-container" style="display: none;">
-            <h2>Time spent reading: </h2>
-            <h1 class="reading-time"></h1>
-        </div>
-        <div id="profile-container" style="display: none;">
-            <h2>Your Cognitive Profile</h2>
-            <div class="profile-badges">
-                <div id="attention-badge" class="badge"></div>
-                <div id="speed-badge" class="badge"></div>
-                <div id="response-badge" class="badge"></div>
             </div>
-            <hr>
-            <h2>Your Stats vs Average Population</h2>
-            <div class="comparison-chart">
-                <div class="metric">
-                    <h3>Reading Speed</h3>
-                    <div class="chart-bar">
-                        <div class="user-bar" id="reading-speed-bar"></div>
-                    </div>
-                    <p><span class="user-label">You:</span> <span id="user-wpm">0</span> WPM | <span class="avg-label">Average:</span> 144 WPM</p>
-                </div>
-                <div class="metric">
-                    <h3>Reaction Time</h3>
-                    <div class="chart-bar">
-                        <div class="user-bar" id="reaction-bar"></div>
-                    </div>
-                    <p><span class="user-label">You:</span> <span id="user-reaction">0</span>s | <span class="avg-label">Average:</span> 1.5-2s</p>
-                </div>
-                <div class="metric">
-                    <h3>Scroll Speed</h3>
-                    <div class="chart-bar">
-                        <div class="user-bar" id="scroll-bar"></div>
-                    </div>
-                    <p><span class="user-label">You:</span> <span id="user-scroll">0</span> px/s | <span class="avg-label">Average:</span> 1200-1500 px/s</p>
-                </div>
-            </div>
-        </div>
-        <div id="average-attention" style="display: none;">
-        </div>
-    <script src="script.js"></script>
+            <span class="label-text">I'm not a robot</span>
+        </label>
+    </div>
+
+    <div id="reaction-time-container" style="display:none;">
+        <h2>Your reaction time:</h2>
+        <h1 class="reaction-time"></h1>
+    </div>
+
+    <div id="reading-time-container" style="display:none;">
+        <h2>Time spent reading:</h2>
+        <h1 class="reading-time"></h1>
+    </div>
+
+    <div id="profile-container" style="display:none;"></div>
+    <div id="average-attention" style="display:none;"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
