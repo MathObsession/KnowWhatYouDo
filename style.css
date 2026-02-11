@@ -1,22 +1,51 @@
 body{
     font-family: 'Google Sans Flex', sans-serif;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #04080c;
+    color: #f9f9f9e8;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 40px;
 }
 .heading{
+  color: black;
     font-size: 45px;
     font-weight: 600;
     margin-top: 20px;
+}
+.section1{
+  background-color: pink;
+  padding: 4px;
+  border-radius: 2px;
+}
+.section2{
+  background-color: rgb(167, 251, 209);
+  padding: 4px;
+  margin-left: -2px;
+  border-radius: 2px;
+}
+.section3{
+  background-color: rgb(167, 196, 251);
+  padding: 4px;
+  margin-left: -2px;
+  border-radius: 2px;
+}
+.section4{
+  background-color: rgb(251, 251, 167);
+  padding: 4px;
+  margin-left: -2px;
+  border-radius: 2px;
 }
 .content{
     font-size: 22px;
     font-weight: 400;
     margin-top: 40px;
     text-align: justify;
+    background-color: #99eafa;
+    color: black;
+    padding: 23px;
+    border-radius: 3px;
+    font-weight: 600;
 }
 .brain-image{
     border-radius: 30px;
