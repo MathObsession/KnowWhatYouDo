@@ -1,4 +1,4 @@
-const OPENROUTER_API_KEY = "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";
+const OPENROUTER_API_KEY = "NO_API_KEY_FOR_SAFETY";
 
 const topics = [
     "Artificial Intelligence",
